@@ -38,6 +38,6 @@ app.use(express.static(path.join(__dirname, '/public')));
 //     resp.sendFile(path.resolve(__dirname, 'public/index.html'));
 // });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log('‘Servidor corriendo')
 });
